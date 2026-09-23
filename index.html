@@ -1,150 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#07111f">
-<meta name="description" content="Vertex Digital - Professional websites for businesses and individuals.">
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#06111f">
 <title>Vertex Digital | Building Your Digital Future</title>
-
 <style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#050b14;color:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}
-header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(5,11,20,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
-nav{max-width:1150px;margin:auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:24px;font-weight:800;letter-spacing:1px}.logo span{color:#28a9ff}
-nav ul{list-style:none;display:flex;gap:25px}nav a:hover{color:#28a9ff}
-.menu{display:none;font-size:28px;cursor:pointer}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px 70px;background:radial-gradient(circle at 50% 20%,rgba(40,169,255,.18),transparent 35%),linear-gradient(180deg,#071525,#050b14)}
-.hero-content{max-width:850px}.badge{display:inline-block;padding:8px 16px;border:1px solid rgba(40,169,255,.4);border-radius:30px;color:#63c2ff;margin-bottom:20px;font-size:14px}
-.hero h1{font-size:clamp(45px,9vw,85px);line-height:1;margin-bottom:25px}.hero h1 span{color:#28a9ff}
-.hero p{max-width:650px;margin:auto;color:#b9c5d3;font-size:18px}
-.buttons{margin-top:35px;display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
-.btn{padding:14px 25px;border-radius:8px;font-weight:bold;display:inline-block;transition:.25s}
-.primary{background:#168fe0}.primary:hover{background:#28a9ff;transform:translateY(-3px)}
-.secondary{border:1px solid #405164}.secondary:hover{border-color:#28a9ff;color:#28a9ff}
-section{padding:90px 20px}.container{max-width:1100px;margin:auto}
-.section-title{text-align:center;margin-bottom:50px}.section-title h2{font-size:38px;margin-bottom:10px}.section-title p{color:#91a0b1}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#0b1624;border:1px solid #1b2b3d;padding:30px;border-radius:15px;transition:.3s}
-.card:hover{transform:translateY(-7px);border-color:#168fe0}.icon{font-size:35px;margin-bottom:18px}.card h3{margin-bottom:10px}.card p{color:#9caabb}
-.pricing .card{text-align:center}.price{font-size:38px;font-weight:800;color:#28a9ff;margin:15px 0}
-.card ul{list-style:none;color:#b8c4d1;margin:20px 0}.card li{margin:9px 0}
-.portfolio-box{min-height:210px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#0c1d30,#07111f)}
-.about{background:#07111d}.about-content{max-width:800px;margin:auto;text-align:center}.about-content p{color:#aab7c5;margin-top:15px}
-.contact-box{max-width:750px;margin:auto;text-align:center;background:#0b1624;border:1px solid #1b2b3d;padding:45px 25px;border-radius:18px}
-.contact-info{margin:25px 0;font-size:18px}.contact-info p{margin:10px}
-footer{text-align:center;padding:30px 20px;background:#03070d;color:#788695}
-.whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25D366;color:white;display:flex;align-items:center;justify-content:center;font-size:28px;z-index:999;box-shadow:0 5px 20px rgba(0,0,0,.4)}
-@media(max-width:750px){
-nav ul{display:none;position:absolute;top:70px;left:0;width:100%;background:#07111f;flex-direction:column;padding:25px;text-align:center}
-nav ul.active{display:flex}.menu{display:block}.grid{grid-template-columns:1fr}section{padding:70px 18px}.hero h1{font-size:52px}
-}
-</style>
-</head>
-
-<body>
-<header>
-<nav>
-<div class="logo">VERTEX<span>.</span></div>
-<div class="menu" onclick="toggleMenu()">☰</div>
-<ul id="navLinks">
-<li><a href="#home" onclick="closeMenu()">Home</a></li>
-<li><a href="#services" onclick="closeMenu()">Services</a></li>
-<li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
-<li><a href="#pricing" onclick="closeMenu()">Pricing</a></li>
-<li><a href="#about" onclick="closeMenu()">About</a></li>
-<li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-</ul>
-</nav>
-</header>
-
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}body{font-family:Arial,sans-serif;background:#050b14;color:#f5f9ff;line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1100px,92%);margin:auto}
+header{position:fixed;top:0;width:100%;z-index:99;background:#050b14ee;backdrop-filter:blur(12px);border-bottom:1px solid #18283a}nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:24px;font-weight:900;letter-spacing:1px}.logo b{color:#28a9ff}nav ul{display:flex;gap:24px;list-style:none}nav a:hover{color:#28a9ff}.menu{display:none;font-size:28px}
+.hero{min-height:100vh;padding:140px 0 80px;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 50% 20%,#12395a 0,transparent 36%),linear-gradient(180deg,#071525,#050b14)}.badge{display:inline-block;border:1px solid #245a80;color:#72caff;padding:7px 15px;border-radius:30px;font-size:12px;font-weight:bold}h1{font-size:clamp(48px,10vw,88px);line-height:.98;margin:22px 0}h1 span{color:#28a9ff}.hero p{max-width:680px;margin:auto;color:#aebdcd;font-size:18px}.buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 21px;border-radius:9px;font-weight:bold;border:1px solid #31506b;display:inline-block;transition:.2s}.btn.primary{background:#168fe0;border-color:#168fe0}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+section{padding:90px 0}.dark{background:#07111d}.title{text-align:center;margin-bottom:45px}.title h2{font-size:38px}.title p{color:#91a1b3}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#0b1624;border:1px solid #1a2d40;border-radius:16px;padding:28px;transition:.2s}.card:hover{transform:translateY(-5px);border-color:#168fe0}.icon{font-size:36px;margin-bottom:12px}.card p{color:#9eacbb}.card h3{margin-bottom:8px}.portfolio{min-height:210px;display:flex;flex-direction:column;justify-content:center;text-align:center;background:linear-gradient(135deg,#0c2136,#07111f)}.price{font-size:38px;font-weight:900;color:#28a9ff;margin:12px 0}.card ul{list-style:none;color:#b7c4d1;margin:15px 0 22px}.card li{margin:7px}.about{max-width:800px;text-align:center;margin:auto}.about p{color:#aab7c5;margin:12px 0}.form{max-width:760px;margin:auto;background:#0b1624;border:1px solid #1a2d40;border-radius:18px;padding:28px}input,textarea,select{width:100%;margin:7px 0 14px;padding:13px;border-radius:8px;border:1px solid #294056;background:#07111d;color:white;font:inherit}textarea{min-height:130px;resize:vertical}label{font-size:14px;color:#b8c5d2}.contact{text-align:center}.contact p{margin:8px;color:#aebdca}footer{text-align:center;padding:28px;color:#758596;background:#03070d}.float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:white;font-size:28px;z-index:100;box-shadow:0 5px 20px #0008}
+@media(max-width:760px){nav ul{display:none;position:absolute;top:70px;left:0;width:100%;background:#07111f;flex-direction:column;text-align:center;padding:22px}.menu{display:block}.grid{grid-template-columns:1fr}section{padding:70px 0}}
+</style></head><body>
+<header><nav class="container"><a class="logo" href="#home">VERTEX<b>.</b></a><div class="menu" onclick="document.querySelector('nav ul').classList.toggle('open')">☰</div><ul>
+<li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#about">About</a></li><li><a href="#request">Request</a></li></ul></nav></header>
 <main>
-<section class="hero" id="home">
-<div class="hero-content">
-<div class="badge">WEB DESIGN • DEVELOPMENT • DIGITAL SOLUTIONS</div>
-<h1>Build Your<br><span>Digital Future.</span></h1>
-<p>Vertex Digital creates modern, responsive and professional websites for businesses, organisations and individuals.</p>
-<div class="buttons">
-<a class="btn primary" href="#contact">Get Your Website</a>
-<a class="btn secondary" href="#portfolio">View Portfolio</a>
-</div>
-</div>
-</section>
-
-<section id="services">
-<div class="container">
-<div class="section-title"><h2>Our Services</h2><p>Everything you need to establish your presence online.</p></div>
-<div class="grid">
-<div class="card"><div class="icon">🌐</div><h3>Website Creation</h3><p>Modern websites designed around your business, brand and goals.</p></div>
-<div class="card"><div class="icon">🎨</div><h3>Web Design</h3><p>Clean and attractive layouts that work smoothly on phones, tablets and computers.</p></div>
-<div class="card"><div class="icon">🚀</div><h3>Website Publishing</h3><p>Assistance with getting your website online and ready for customers.</p></div>
-<div class="card"><div class="icon">🔧</div><h3>Maintenance</h3><p>Keep your website updated with new information, images and features.</p></div>
-<div class="card"><div class="icon">📱</div><h3>Mobile Websites</h3><p>Responsive websites built to look great on smartphones.</p></div>
-<div class="card"><div class="icon">💡</div><h3>Custom Solutions</h3><p>Have a different idea? We can discuss a website designed specifically for you.</p></div>
-</div>
-</div>
-</section>
-
-<section id="portfolio">
-<div class="container">
-<div class="section-title"><h2>Portfolio</h2><p>Demo projects — real client projects will be added here.</p></div>
-<div class="grid">
-<div class="card portfolio-box"><div class="icon">💇</div><h3>Beauty Studio</h3><p>Demo business website</p></div>
-<div class="card portfolio-box"><div class="icon">🍗</div><h3>Food Business</h3><p>Demo restaurant website</p></div>
-<div class="card portfolio-box"><div class="icon">🛍️</div><h3>Online Shop</h3><p>Demo e-commerce concept</p></div>
-</div>
-</div>
-</section>
-
-<section class="pricing" id="pricing">
-<div class="container">
-<div class="section-title"><h2>Simple Pricing</h2><p>Affordable options for getting started online.</p></div>
-<div class="grid">
-<div class="card"><h3>Starter</h3><div class="price">$20</div><ul><li>✓ One-page website</li><li>✓ Mobile-friendly</li><li>✓ Contact section</li><li>✓ Basic design</li></ul><a class="btn primary" href="#contact">Choose</a></div>
-<div class="card"><h3>Business</h3><div class="price">$50</div><ul><li>✓ Multi-section website</li><li>✓ Mobile-friendly</li><li>✓ Gallery</li><li>✓ Contact options</li><li>✓ Custom design</li></ul><a class="btn primary" href="#contact">Choose</a></div>
-<div class="card"><h3>Custom</h3><div class="price">Quote</div><ul><li>✓ Custom requirements</li><li>✓ Advanced features</li><li>✓ Custom design</li><li>✓ Publishing assistance</li></ul><a class="btn primary" href="#contact">Enquire</a></div>
-</div>
-</div>
-</section>
-
-<section class="about" id="about">
-<div class="about-content">
-<div class="section-title"><h2>About Vertex Digital</h2></div>
-<p>Vertex Digital helps businesses and individuals create a professional presence on the internet.</p>
-<p>Our focus is simple: modern design, responsive websites and practical digital solutions.</p>
-</div>
-</section>
-
-<section id="contact">
-<div class="container">
-<div class="section-title"><h2>Let's Build Something</h2><p>Ready to take your business online?</p></div>
-<div class="contact-box">
-<h3>Get Your Website</h3>
-<div class="contact-info">
-<p>📱 WhatsApp: <strong>0789832568</strong></p>
-<p>📧 Email: <strong>moyowayne396@gmail.com</strong></p>
-</div>
-<div class="buttons">
-<a class="btn primary" href="https://wa.me/263789832568?text=Hello%20Vertex%20Digital%2C%20I%20would%20like%20to%20get%20a%20website.">Message on WhatsApp</a>
-<a class="btn secondary" href="mailto:moyowayne396@gmail.com?subject=Website%20Enquiry">Send Email</a>
-</div>
-</div>
-</div>
-</section>
-</main>
-
-<a class="whatsapp" href="https://wa.me/263789832568?text=Hello%20Vertex%20Digital%2C%20I%20would%20like%20to%20get%20a%20website." aria-label="Contact Vertex Digital on WhatsApp">💬</a>
-
-<footer>
-<p>© 2026 Vertex Digital. All rights reserved.</p>
-<p>Building Your Digital Future.</p>
-</footer>
-
-<script>
-function toggleMenu(){document.getElementById("navLinks").classList.toggle("active")}
-function closeMenu(){document.getElementById("navLinks").classList.remove("active")}
-</script>
-</body>
-</html>
+<section class="hero" id="home"><div class="container"><span class="badge">WEB DESIGN • DEVELOPMENT • PUBLISHING</span><h1>Building Your<br><span>Digital Future.</span></h1><p>Modern, responsive websites for small businesses, organisations, creators and individuals.</p><div class="buttons"><a class="btn primary" href="#request">Request a Website</a><a class="btn" href="#portfolio">See Our Work</a></div></div></section>
+<section id="services"><div class="container"><div class="title"><h2>What We Do</h2><p>Practical digital solutions designed for real businesses.</p></div><div class="grid">
+<div class="card"><div class="icon">🌐</div><h3>Website Creation</h3><p>Professional custom websites built around your goals.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Web Design</h3><p>Clean, modern layouts that work across phones and computers.</p></div>
+<div class="card"><div class="icon">🚀</div><h3>Publishing</h3><p>Help getting your finished website online.</p></div>
+<div class="card"><div class="icon">🔧</div><h3>Maintenance</h3><p>Updates to text, images, prices and other website content.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Mobile-Friendly Sites</h3><p>Responsive designs made with smartphone users in mind.</p></div>
+<div class="card"><div class="icon">💡</div><h3>Custom Projects</h3><p>Have a unique idea? Tell us what you need.</p></div></div></div></section>
+<section class="dark" id="portfolio"><div class="container"><div class="title"><h2>Demo Portfolio</h2><p>Demonstration concepts for prospective clients.</p></div><div class="grid">
+<a class="card portfolio" href="demos/beauty.html"><div class="icon">💇</div><h3>Beauty Studio</h3><p>View demo →</p></a>
+<a class="card portfolio" href="demos/food.html"><div class="icon">🍗</div><h3>Food Business</h3><p>View demo →</p></a>
+<a class="card portfolio" href="demos/shop.html"><div class="icon">🛍️</div><h3>Clothing Store</h3><p>View demo →</p></a></div></div></section>
+<section id="pricing"><div class="container"><div class="title"><h2>Starter Packages</h2><p>Example packages — agree on the exact scope before accepting a project.</p></div><div class="grid">
+<div class="card"><h3>Starter</h3><div class="price">$20</div><ul><li>✓ One-page site</li><li>✓ Mobile-friendly</li><li>✓ Contact section</li><li>✓ Basic design</li></ul><a class="btn primary" href="#request">Request</a></div>
+<div class="card"><h3>Business</h3><div class="price">$50</div><ul><li>✓ Multi-section site</li><li>✓ Mobile-friendly</li><li>✓ Gallery</li><li>✓ WhatsApp contact</li><li>✓ Custom design</li></ul><a class="btn primary" href="#request">Request</a></div>
+<div class="card"><h3>Custom</h3><div class="price">Quote</div><ul><li>✓ Custom requirements</li><li>✓ Advanced features</li><li>✓ Custom design</li><li>✓ Publishing assistance</li></ul><a class="btn primary" href="#request">Enquire</a></div></div></div></section>
+<section class="dark" id="about"><div class="container"><div class="about"><div class="title"><h2>About Vertex Digital</h2></div><p>Vertex Digital helps businesses and individuals establish a professional presence online through modern, responsive websites.</p><p>We focus on clear communication, practical design and websites that are easy to use on mobile devices.</p></div></div></section>
+<section id="request"><div class="container"><div class="title"><h2>Request a Website</h2><p>Tell us what you need and we'll contact you.</p></div><form class="form" onsubmit="sendRequest(event)">
+<label>Your name</label><input id="name" required placeholder="Your name"><label>Business / project name</label><input id="business" placeholder="Business name"><label>Website type</label><select id="type"><option>Business website</option><option>Portfolio</option><option>Online shop</option><option>Restaurant / food</option><option>Other</option></select><label>What do you need?</label><textarea id="details" required placeholder="Describe your website idea..."></textarea><button class="btn primary" type="submit">Send Request on WhatsApp</button></form></div></section>
+<section id="contact"><div class="container contact"><div class="title"><h2>Contact Vertex Digital</h2></div><p>📱 WhatsApp: 0789832568</p><p>📧 moyowayne396@gmail.com</p><div class="buttons"><a class="btn primary" href="https://wa.me/263789832568?text=Hello%20Vertex%20Digital%2C%20I%20want%20a%20website.">WhatsApp Us</a><a class="btn" href="mailto:moyowayne396@gmail.com?subject=Website%20Enquiry">Email Us</a></div></div></section>
+</main><a class="float" href="https://wa.me/263789832568?text=Hello%20Vertex%20Digital%2C%20I%20want%20a%20website.">💬</a><footer>© 2026 Vertex Digital • Building Your Digital Future.</footer>
+<script>function sendRequest(e){e.preventDefault();let n=document.getElementById("name").value,b=document.getElementById("business").value,t=document.getElementById("type").value,d=document.getElementById("details").value;location.href="https://wa.me/263789832568?text="+encodeURIComponent("Hello Vertex Digital!\n\nName: "+n+"\nBusiness/Project: "+b+"\nWebsite type: "+t+"\nDetails: "+d)}</script>
+</body></html>
